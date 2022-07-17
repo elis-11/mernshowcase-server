@@ -1,0 +1,60 @@
+@url = http://localhost:5000
+
+### ALL USERS 
+GET {{url}}/users
+content-type: application/json
+
+### CREATE USER
+POST {{url}}/signup
+content-type: application/json
+ 
+{
+"user": {
+    "firstName": "alica", 
+    "lastName": "alica", 
+    "username": "Alica",
+    "email": "alica@gmail.com",
+    "password1": "alica", 
+    "password2": "alica"
+}
+}
+
+### UPDATE USER
+PATCH {{url}}/user/62d3ff584cb838178e102792
+content-type: application/json
+ 
+{
+    "firstName": "iman", 
+    "lastName": "iman", 
+    "username": "Iman",
+    "email": "iman@gmail.com",
+    "accessGroups": "loggedOutUsers"
+}
+
+### DELETE USER
+DELETE {{url}}/deleteuser
+content-type: application/json
+
+{ "id": "62d3ff584cb838178e102792"}
+
+### LOGIN USERS
+userPOST {{url}}/login
+content-type: application/json
+
+{
+	"userName": "James",
+	"password": "james"
+}
+
+### LOGOUT USERS
+GET {{url}}/logout
+content-type: application/json
+
+{
+	"userName": "James",
+	"password": "james"
+}
+
+### READ CURRENTUSER
+GET {{url}}/currentUser
+content-type: application/json

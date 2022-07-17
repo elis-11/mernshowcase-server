@@ -1,0 +1,37 @@
+[
+  {
+    "username": "anonymous",
+    "firstName": "anonymous",
+    "lastName": "User",
+    "email": "email@gmail.com",
+    "accessGroups": "loggedOutUsers"
+  },
+  {
+    "username": "james",
+    "firstName": "james",
+    "lastName": "JustSignedUpton",
+    "email": "email@gmail.com",
+    "accessGroups": "loggedInUsers,member"
+  },
+  {
+    "username": "alina",
+    "firstName": "alina",
+    "lastName": "Approvedmemberton",
+    "email": "email@gmail.com",
+    "accessGroups": "loggedInUsers, member"
+  },
+  {
+    "username": "conny",
+    "firstName": "conny",
+    "lastName": "ContentEditorton",
+    "email": "email@gmail.com",
+    "accessGroups": "loggedInUsers, member, contentEditors"
+  },
+  {
+    "username": "luis",
+    "firstName": "luis",
+    "lastName": "Administraton",
+    "email": "email@gmail.com",
+    "accessGroups": "loggedInUsers,member, admin"
+  }
+]
